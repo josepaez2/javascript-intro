@@ -1,10 +1,26 @@
  // U3.W7: JavaScript Olympics
 
+// Crea una función que reciba un array de atletas
+// y que añada la propiedad `win` a cada atleta dentro
+//  del arreglo.  `win` debe ser una función que imprima
+//   en la consola "{name} won the {event}",  `event` es
+//    un argumento que recibe esta función.
+
+// Hace mas sentido crear `win` como una expression o una 
+// declaración?
+
 // Integrantes parejas: nombre1, nombre2
 
 
 // 0. Objetos
 
+function Athlete(name, height, sport) {
+    this.name = name;
+    this.height = height;
+    this.sport = sport;
+}
+var oscar = new Athlete("Jose", 50, "futbol");
+var jose = new Athlete("Oscar", 80, "tennis");
 
 
 // 1. Añadir propiedades a objetos
