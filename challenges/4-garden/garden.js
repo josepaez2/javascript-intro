@@ -26,11 +26,6 @@ function assert(test, message) {
   return true;
 }
 
-function Flower(type, color) {
-  this.type = type
-  this.color = color
-}
-
 var flowers = [
   new Flower("Aster", "red"),
   new Flower("Bird of Paradise", "orange"),
@@ -41,24 +36,6 @@ var flowers = [
   new Flower("Chrysanthemum", "yellow"),
 ];
 
-
-Garden.prototype.plant = function(flowers) {
-  var garden = this
-  flowers.forEach(function(flower){
-    garden.flowers.push(flower)
-  })
-}
-
-function forEach(callback) {
-  callback()
-}
-
-// callback() --> window
-// objeto.callback() --> obejto
-// new Callback --> objeto nuevo
-// callback.bind(), callback.call(), callback.apply() --> explicitmane
-
-var garden = new Garden()
 
 garden.plant(flowers);
 
@@ -85,4 +62,4 @@ assert(
   flowers[0].identify === flowers[5].identify, "only one implementation of the identify() function should exist"
 );
 
-console.log("Todas las Pruebas Pasan Felicitaciones!!!");
+console.log("Terminaste todo funciona");
