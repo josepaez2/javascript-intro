@@ -14,55 +14,33 @@
 
 // 0. Objetos
 
-function Athlete(name, height, sport) {
-    this.name = name;
-    this.height = height;
-    this.sport = sport;
-}
-var oscar = new Athlete("Jose", 50, "futbol");
-var jose = new Athlete("Oscar", 80, "tennis");
+
+var oscar = {name: "Jose", age: 50, sport: "futbol"}
+var jose = {name: "Oscar",age: 80,sport: "tennis"}
 
 
 // 1. Añadir propiedades a objetos
-
-a1 = {
-  name: 'fasd',
-  age: 12
-}
-
-a2 = {
-  name: 'afsdf',
-  age: 324
-}
-
-
-var name = 'juan'
-
 // Function Declaration
-function name() {
 
+// Crea una función que reciba un array de atletas
+//  y que añada la propiedad `win` a cada atleta 
+//  dentro del arreglo.  `win` debe ser una función
+//  que imprima en la consola "{name} won the {event}",
+//  `event` es un argumento que recibe esta función.
+
+var jose = {name: "Jose", age: 50, sport: "futbol"}
+var oscar = {name: "Oscar",age: 80,sport: "tennis"}
+var athletes = []
+athletes[0] = jose
+athletes[1] = oscar
+
+
+for (var i = 0; i < athletes.length; i++) {
+	athletes[i].win = console.log(`${athletes[i].name} won the ${athletes[i].sport}`)
+	athletes[i].win
 }
 
-// Function Expresssion
-var name = function() {
-  console.o
-}
-
-
-
-
-function addWinToAthletes(athletes, event) {
-  athletes.forEach(function(athlete){
-    athlete.win = function() {
-      console.log(`${this.name} won the ${event}`)
-    }
-  })
-}
-
-
-addWinToAthletes([a1,a2], 'Tennis')
-
-
+console.log(" ".length)
 
 // 2. Voltea un String
 
@@ -71,12 +49,20 @@ addWinToAthletes([a1,a2], 'Tennis')
 
 // 3. Remueve numeros impares
 
-
+function removeOdds(arr){
+	return arr.filter(function(element){
+		return element%2 === 0
+	})
+}
 
 
 // 4. Funcion constructora
 
-
+function Athlete(name, height, sport) {
+    this.name = name;
+    this.height = height;
+    this.sport = sport;
+}
 
 
 // 5. Reflexion
