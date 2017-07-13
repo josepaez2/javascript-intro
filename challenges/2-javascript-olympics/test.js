@@ -1,27 +1,41 @@
-function adjustText(string, number) {
-  if (string.length >= number){
-    console.log( string.substring(0, number))
-  }   else {
-    console.log(string + ("c".repeat(number - string.length)))
-  } 
-}
+// memo = 0
+// function counter() {
+// return memo+=1
+//   }
 
-adjustText("Pedro", 4)
-adjustText("Pedro", 10)
-adjustText("a", 6)
 
-function adjustText(str, length) {
-  if (str.length > length) {
-     str = str.substring(0, length);
-  } else {
-    while (str.length < length) {
-      str += " ";
+// var count = counter()
+
+
+// console.log(count())
+// console.log(count())
+// console.log(count())
+// console.log(count())
+
+
+// var count = counter()
+
+// function hola(){
+//   return console.log("Hola soy yo")
+// }
+
+
+// var alo = function (){
+//   return console.log("Hola soy yo")
+// }
+// alo()
+
+// var alo = function hola(){
+//   return console.log("Hola soy yo")
+// }
+
+
+
+function counter() {
+  return function (){
+    return memo+=1
     }
-  }
-
-  return str;
 }
-  
-adjustText("Pedro", 4)
-adjustText("Pedro", 10)
-adjustText("a", 6)
+console.log(counter())
+
+console.log ("hola")

@@ -6,7 +6,7 @@
 // Escribe tu codigo aca.
 
 
-<<<<<<< HEAD
+
 console.log('Yeahh')
 
 var secretNumber = 7
@@ -17,8 +17,7 @@ var allowedIn = false
 
 var members = ['Juan', 'Oscar', 'Pedro', 'German']
 
-=======
->>>>>>> 302821f1ff12fdd3883dab62665ed8a99258d691
+
 // __________________________________________
 // Refleccion: Escribe una refleccion aca sobre lo que aprendiste.
 //

@@ -30,38 +30,38 @@
     this; //-> element with id "breeds"
   }, false);
   //
-  // document.getElementById('breeds').addEventListener('mouseleave',function(ev) {
-  //   this.style.fontFamily = 'helvetica'
-  //   this; //-> element with id "breeds
-  // }, false)
-  //
-  //
-  // var breeds = document.getElementById('breeds');
-  //
+  document.getElementById('breeds').addEventListener('mouseleave',function(ev) {
+    this.style.fontFamily = 'helvetica'
+    this; //-> element with id "breeds
+  }, false)
+  
+  
+  var breeds = document.getElementById('breeds');
+  
   // //register a simple handler
   // breeds.addEventListener('click', function(ev) {
   //   console.log('clicked!');
   // }, false);
-  //
+  
   // //removing a handler that looks identical
   // breeds.removeEventListener('click', function(ev) {
   //   console.log('clicked!');
   // }, false);
   //
-  // ///////// Do this instead
-  //
-  // var handler = function(ev) {
-  //   console.log('clicked!');
-  // }
-  //
-  // breeds = document.getElementById('breeds');
-  //
-  // //register a simple handler
-  // breeds.addEventListener('click', handler, false);
-  //
-  // //and remove the registration
-  // breeds.removeEventListener('click', handler, false);
-  //
+  ///////// Do this instead
+  
+  var handler = function(ev) {
+    console.log('clicked!');
+  }
+  
+  breeds = document.getElementById('breeds');
+  
+  //register a simple handler
+  breeds.addEventListener('click', handler, false);
+  
+  //and remove the registration
+  breeds.removeEventListener('click', handler, false);
+  
   // /////////////////////////// Event Object
   //
   // var handler = function() {

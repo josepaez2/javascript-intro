@@ -78,8 +78,6 @@ console.log(" ".length)
 
 // 3. Remueve numeros impares
 
-
-
 var arr = [1,2,3,4,5]
 
 function removeOdds(arr) {
@@ -87,10 +85,6 @@ function removeOdds(arr) {
     return element % 2 === 0
   })
 }
-
-
-
-
 
 // 4. Funcion constructora
 

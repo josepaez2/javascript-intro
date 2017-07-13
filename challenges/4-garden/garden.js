@@ -4,17 +4,43 @@
 // TU CODIGO: Crea un Objeto literal "garden", y funcion constuctora y prototipos para Flower aca.
 //------------------------------------------------------------------------------------------------------------------
 
+// function Garden(flowers) {
+//     this.name = name;
+//     this.location = location;
+
+// }
+
 var garden = {
   name: "Kula Botanical Garden",
-  location: "Kula Botanical Garden"
+  location: "Makawao",
+  flowers: [],
+  plant: function (flowers){
+    flowers.forEach(function(flower){
+      garden.flowers.push(flower)
+    })
+  },
+  selectByColor: function (color){
+    return garden.flowers.filter(function(flower){
+      return flower.color === color 
+    })
+  },
+  
+  selectByName: function (name){
+    return garden.flowers.filter(function(flower){
+      return flower.name === name 
+    })
+  }
 }
 
-
-function Garden() {
+function Flower(name,color) {
     this.name = name;
-    this.location = location;
-
+    this.color = color;
 }
+Flower.prototype.identify = function(){
+     return `I am an ${this.name} and I am ${this.color}.`
+   }
+
+
 //------------------------------------------------------------------------------------------------------------------
 // PRUEBAS: **NO** Cambies nada debajo de esta linea. Tu trabajo es implementar el codigo arriba para hacer que estas pruebas pasen.
 //------------------------------------------------------------------------------------------------------------------

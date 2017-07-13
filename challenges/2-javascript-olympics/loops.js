@@ -41,7 +41,21 @@ for (var i = 0; i < athletes.length; i++) {
 // console.log(newArr)
 // }
 
+// EACH
 
+function promediame (arr){
+  var sum = 0
+  var counter = 0
+  arr.forEach (function(element){
+    sum += element;
+    counter += 1;
+  })
+  if (sum === 0 && counter === 0){
+    return 0
+  } else {
+    return sum/counter;
+  }
+}
 
 
 
