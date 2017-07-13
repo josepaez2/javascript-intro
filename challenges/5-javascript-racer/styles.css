@@ -1,3 +1,9 @@
+.* {
+  background-color: white;
+  height: 50px;
+  width: 70px;
+  border: 1px solid black;
+}
 .racer_table td {
   background-color: white;
   height: 50px;
@@ -7,4 +13,46 @@
 
 .racer_table td.active {
   background-color: black;
+}
+
+.racer_table {
+    margin: auto;
+    width: 50%;
+/*    border: 3px solid green;*/
+    padding: 10px;
+}
+
+.countdown {
+	float: left;
+    margin-top: 50px;
+/*    margin-left: 0;*/
+    width: 240px;
+/*    border: 3px solid green;
+    padding: 10px;*/
+
+}
+.restart {
+/*    margin-top: 100px;
+/*    margin-bottom: 100px;*/
+/*    margin-right: 150px;*/
+/*    margin-left: 80px;
+    width: 100px;
+    border: 3px solid green;
+    padding: 10px;*/
+    float: left;
+}
+.progress {
+/*    margin-top: 100px;
+/*    margin-bottom: 100px;*/
+/*    margin-right: 150px;*/
+/*    margin-left: 80px;
+    width: 100px;
+    border: 3px solid green;
+    padding: 10px;*/
+    float: left;
+}
+#time{
+/*	margin-top: 100px;*/
+/*    margin-left: 1px;*/
+    float: left;	
 }
